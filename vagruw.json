@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "project": "vagruw",
+  "topology": "aio",
+  "provider": "virtualbox",
+  "box": "generic/ubuntu2204",
+  "wazuh_version": "4.14.9",
+  "network": "192.168.56.0/24",
+  "ip_start": 10,
+  "counts": {
+    "indexers": 1,
+    "servers": 1,
+    "dashboards": 1
+  },
+  "resources": {
+    "aio": {
+      "cpus": 2,
+      "memory_mb": 4096
+    },
+    "indexer": {
+      "cpus": 2,
+      "memory_mb": 4096
+    },
+    "server": {
+      "cpus": 2,
+      "memory_mb": 2048
+    },
+    "dashboard": {
+      "cpus": 2,
+      "memory_mb": 2048
+    }
+  },
+  "ignore_hardware_check": true
+}
