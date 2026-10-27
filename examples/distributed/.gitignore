@@ -1,0 +1,6 @@
+# Vagruw runtime and credential files.
+.vagrant/
+.vagruw/
+*.log
+wazuh-install-files.tar
+credentials.txt
